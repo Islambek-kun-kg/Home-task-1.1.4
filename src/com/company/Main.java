@@ -40,7 +40,7 @@ public class Main {
         roundCounter++;
         changeBossDefense();
         bossAngryState();
-
+        medicHilling();
         bossHits();
         heroesHits();
         printStatistics();
@@ -68,6 +68,10 @@ public class Main {
                 }
             }
         }
+
+    }
+
+    public static void medicHilling() {
         for (int i = 0; i < heroesHealth.length; i++) {
             Random r = new Random();
             int hill = r.nextInt(20) + 15;
